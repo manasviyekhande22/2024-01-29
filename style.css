@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 100%;
+    border: 1px solid red;
+    position: relative;
+}
+.child{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    font-size: 23px;
+    text-align: center;
+    position: absolute;
+    line-height: 150px;
+    left: 50%;
+    top: 60%;
+    background-color: chartreuse;
+}
