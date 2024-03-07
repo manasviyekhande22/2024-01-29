@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <style>
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJNcHcI5zxlpJPNkb3gpcvwnrGdHKDkQKRoJp7gr23JrEvVIym8Rzx72UgpRmc37RpSL4&usqp=CAU');
+           
+           
+     }
+        .empty-box {
+            width: 390px;
+            height: 300px;
+            border: 1px solid antiquewhite;
+            border: bold;
+            margin-top: 100px;
+            border-radius: 10px;
+            text-align: center;
+           
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 30px;
+        }
+
+        input[type="text"] {
+            border-radius: 10px;
+            width: 250px;
+            height: 30px;
+            border-color: antiquewhite;
+            float: left;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 30px;
+        }
+
+        select {
+            float: left;
+        }
+
+        h3 {
+            float: right;
+        }
+
+        .availability-label {
+            float: left;
+            margin-right: 10px;
+            clear: left;
+        }
+
+        .availability-input {
+            float: left;
+        }
+        sign{
+            font-size: 90px;
+            background-color: blue;
+            margin-left: 100px;
+            padding-left:300px ;
+        }
+       
+
+        .one {
+            display: flex;
+            gap: 120px;
+        }
+
+        .radio-buttons {
+            clear: both;
+            margin-top: 20px;
+        }
+
+        .radio-buttons label {
+            margin-right: 20px;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            float:left:200px;
+            top:300px;
+            bottom:200px;
+            
+            
+
+            
+            
+        }
+    
+    
+       
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="empty-box">
+            <h1>UserName</h1>
+            <input type="text" placeholder="Eg. John Doe">
+
+            <div class="empty-box">
+                <div class="one">
+                    <div>
+                        <h2>Country</h2>
+                        <select name="country" id="Country">
+                            <option>India</option>
+                            <option>America</option>
+                        </select>
+                        <h1>Hobbies</h1>
+                       
+                       
+
+                    </div>
+                    <div>
+                        <h2>Availability</h2>
+                        <div class="radio-buttons">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="yes" name="availability" value="yes">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="availability" value="no">
+                     </div>
+                     <center>
+                     <h1><button class="plus">+</button></h1>
+                     <h1><button type="submit">Submit</button></h1>
+                    </div></center>
+                     </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
