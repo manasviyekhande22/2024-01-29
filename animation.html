@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        width: 550px;
+        margin:50px auto;
+        position: relative;
+        perspective: 900px;
+    }
+    .shinchan-image{
+        width: 100px;
+        height: auto;
+    }
+    .wrapper .shinchan-image{
+        transform: rotateY(0deg);
+        transition: all 0.5s ease-in-out;
+    }
+    .wrapper:hover .shinchan-image{
+        transform: rotateY(-90deg);
+    }
+    .h1{
+        text-align: center;
+        line-height: 200px;
+    }
+    .text{
+        border: 1px solid red;
+        position:absolute;
+        top: 0;
+        left: 0;
+        color: aqua;
+        background: rgba(red, green, blue, alpha);
+        width: 100%;
+        height:100%;
+        text-align: center;
+        line-height: 100px;
+        padding: 30px;
+    }
+    .text{
+        transform: rotateY(90deg);
+        transition: all 0.5s ease-in-out;
+    }
+    .wrapper:hover .text{
+        transform: rotateY(0deg);
+
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="shinchan-image">
+            <img src="https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        </div>
+        <div class="text">
+            <h1>SHINCHAN</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
