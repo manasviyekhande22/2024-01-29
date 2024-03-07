@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><media_query.html </title>
+</head>
+<style>
+     *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+     .box{
+        height: 80px;
+        background-color: aqua;
+        margin:10px;
+    }
+    .box-1{
+       background-color:pink;
+    }
+    
+   @media (max-width : 1000px) {
+    .box{
+        background-color: aqua;
+    }
+   }
+   .box-2{
+      background-color: darkorange;
+   }
+   @media (max-width :390px) {
+    .box-2{
+        background-color:gold;
+    }
+   }
+   
+</style>
+<body>
+    <div class="box box-1">box-1</div>
+    <div class="box box-2">box-2</div>
+    <div class="box box-3">box-3</div>
+    <div class="box box-4">box-4</div>
+    <div class="box box-5">box-5</div>
+    <div class="box box-6">box-6</div>
+    
+    
+</body>
+</html>
