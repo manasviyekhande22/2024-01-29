@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        margin: 10px;
+        background-color: aqua;
+        animation-name:animation-prop;
+        animation-duration: 3s;
+        animation-iteration-count:5;
+        animation-direction: alternate;
+
+    }
+    .box1{
+        animation-timing-function: ease;
+        background-color: chocolate;
+    }
+    .box2{
+        animation-timing-function: linear;
+        background-color:red;
+    }
+    .box3{
+        animation-timing-function:ease-in;
+        background-color:pink;
+    }
+    .box4{
+        animation-timing-function: ease-out;
+        background-color:violet;
+    }
+    .box5{
+        animation-timing-function:ease-in-out;
+        background-color:green;
+    }
+    .box6{
+        animation-timing-function:steps(4);
+        background-color: greenyellow;
+    }
+
+
+    @keyframes animation-prop{
+        from{
+              width: 100px;
+        }
+        to{
+            width: 500px;
+
+        }
+    }
+</style>
+<body>
+    <div class="box box-1">Ease</div>
+    <div class="box box2">linear</div>
+    <div class="box box3">Ease-out</div>
+    <div class="box box4">Ease-in</div>
+    <div class="box box5">Ease-in-out</div>
+    <div class="box box6">steps</div>
+    
+    
+</body>
+</html>
